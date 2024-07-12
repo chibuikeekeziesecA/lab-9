@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Photo of Longtennis game</h1>
+    </header>
+    <section class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="player">players</button>
+        <button data-filter="Longtennis court">clay court and grass court</button>
+        <button data-filter="category 3">category 3</button>
+    </section>
+    <section class="gallery">
+        <div class="image" data-category="category1">
+            <img src="novak-djokovic.jpeg" alt="Image 1">
+        </div>
+        <div class="image" data-category="category2">
+            <img src="tennis-clay-court-1000x1000.png.webp" alt="Image 2">
+            <img src="" alt=""image 3">
+        </div>
+        <div class="image" data-category="category3">
+            <img src="GRASS1-superJumbo.jpg" alt="Image 3">
+            <img src="tennis-clay-court-1000x1000.png.webp" alt="image 4">
+        </div>
+        <!-- Add more images as needed -->
+    </section>
+    <div class="lightbox" style="display: none;">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
